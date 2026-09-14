@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Six Senses of Luxury 2026 — CELEX</title>
+<title>Turban of the Highest Pour 2026 — CELEX</title>
 <style>
 @font-face{font-family:'Butler';src:url('https://celex-ensemble.com/wp-content/uploads/2026/03/Butler_Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:'Avenir';src:url('https://celex-ensemble.com/wp-content/uploads/2026/02/Avenir-Regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
@@ -51,7 +53,7 @@ nav.scrolled .nav-cta{border-color:var(--line-strong);color:var(--gold-deep)}
 
 /* HERO */
 .hero{height:100vh;min-height:680px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.hero-photo{position:absolute;inset:0;z-index:0;background:#0a1f1c url('https://celex-ensemble.com/wp-content/uploads/2026/06/pexels-ndtoanf-27454425-scaled.jpg') center 50%/cover;transform:scale(1.04);animation:hs 11s ease-out forwards}
+.hero-photo{position:absolute;inset:0;z-index:0;background:#0a1f1c url('https://celex-ensemble.com/wp-content/uploads/2026/06/Morocco-Schedule-1-scaled.jpg') center 50%/cover;transform:scale(1.04);animation:hs 11s ease-out forwards}
 @keyframes hs{to{transform:scale(1)}}
 .hero-grad{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(165deg,rgba(7,24,26,.72) 0%,rgba(13,37,37,.36) 46%,rgba(7,24,26,.88) 100%)}
 .hero-squiggle{position:absolute;top:50%;left:50%;width:min(118vh,1080px);transform:translate(-50%,-46%);opacity:.075;z-index:2;mix-blend-mode:screen;pointer-events:none}
@@ -138,6 +140,8 @@ section.cd-band,section.vn-band,section.inc-band{overflow:visible}
 #gallery>.wrap{position:relative;z-index:2}
 #gallery .gallery-hd,#gallery .gslider{position:relative;z-index:3}
 .dragon-spine-img.sc,.dragon-face-img.sc{opacity:0;transition:opacity .5s ease}
+/* Temporarily hidden — to be replaced. Remove this rule to restore. */
+.dragon-spine-img,.dragon-face-img{display:none !important}
 @media(max-width:1024px){.dragon-spine-img{transform:scale(.5)}}
 @media(max-width:680px){.dragon-spine-img{transform:scale(.34);left:calc(50% - 50vw - 30px)}.dragon-face-img{width:min(240px,46vw)}}
 
@@ -146,7 +150,7 @@ section.cd-band,section.vn-band,section.inc-band{overflow:visible}
 .ov-figure{position:relative;grid-column:1;grid-row:1;align-self:stretch;min-height:520px}
 .ov-text{grid-column:2;grid-row:1}
 .ov .tags{grid-column:2;grid-row:2}
-.ov-img{position:relative;width:100%;height:100%;min-height:520px;background:var(--paper) url('https://celex-ensemble.com/wp-content/uploads/2026/06/pexels-dqnguyen15-19578157-scaled.jpg') center/contain no-repeat;border:none}
+.ov-img{position:relative;width:100%;height:100%;min-height:520px;background:var(--paper) url('https://celex-ensemble.com/wp-content/uploads/2026/06/Morocco-Setting-1-scaled.jpg') center/contain no-repeat;border:none}
 .ov-badge{position:absolute;right:-26px;bottom:0;z-index:6;transform:translateY(50%);padding:26px 30px;text-align:center;overflow:hidden;background:radial-gradient(120% 150% at 50% -20%,#16332f 0%,#0d2525 48%,#07181a 100%);border:1px solid rgba(229,190,127,.42);box-shadow:0 24px 56px -28px rgba(7,24,26,.6),inset 0 1px 0 rgba(229,190,127,.12)}
 .ov-badge::before{content:'';position:absolute;top:-46%;left:50%;transform:translateX(-50%);width:90%;height:90%;background:radial-gradient(closest-side,rgba(229,190,127,.18),transparent 70%);pointer-events:none}
 .ov-badge-n{font-family:var(--butler);font-size:46px;color:var(--gold);line-height:1;position:relative;text-shadow:0 0 30px rgba(229,190,127,.32)}
@@ -159,7 +163,7 @@ section.cd-band,section.vn-band,section.inc-band{overflow:visible}
 @media(max-width:860px){.ov{grid-template-columns:1fr;grid-template-rows:auto;column-gap:0;gap:40px}.ov-figure,.ov-text,.ov .tags{grid-column:1;grid-row:auto}.ov-figure{align-self:auto;height:auto !important;min-height:0}.ov-img{height:auto !important}.ov-badge{right:18px;transform:none}}
 
 /* VENUE */
-.venue-hd{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:48px}
+.venue-hd{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:48px}
 .venue-hd h2{font-family:var(--butler);font-size:clamp(34px,4.2vw,54px);font-weight:400;color:var(--forest);line-height:1.08}
 .venue-hd h2 em{color:var(--amber)}
 .venue-hd p{font-size:16px;color:var(--ink-quiet);max-width:420px;line-height:1.8}
@@ -283,10 +287,11 @@ section.cd-band,section.vn-band,section.inc-band{overflow:visible}
 .gdot{width:8px;height:8px;border-radius:50%;background:var(--line-strong);border:none;cursor:pointer;padding:0;transition:all .3s}
 .gdot.active{background:var(--gold-deep);transform:scale(1.3)}
 /* VIDEO TILES */
-.gvid{position:relative;flex:0 0 calc((100% - 48px)/3);aspect-ratio:9/16;border:none;background:#0a1f1c center/cover no-repeat;overflow:hidden;cursor:pointer;transition:transform .55s cubic-bezier(.22,.61,.36,1),box-shadow .55s cubic-bezier(.22,.61,.36,1),.61,.36,1),box-shadow .45s cubic-bezier(.22,.61,.36,1)}
+.gvid{position:relative;flex:0 0 calc((100% - 48px)/3);aspect-ratio:9/16;border:none;background:#0a1f1c;overflow:hidden;cursor:pointer;transition:transform .55s cubic-bezier(.22,.61,.36,1),box-shadow .55s cubic-bezier(.22,.61,.36,1),.61,.36,1),box-shadow .45s cubic-bezier(.22,.61,.36,1)}
 .gvid::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(7,24,26,.5),rgba(7,24,26,.05) 60%);transition:opacity .4s;pointer-events:none}
-.gvid::before{content:'';position:absolute;inset:0;z-index:0;background-image:inherit;background-position:center;background-size:cover;background-repeat:no-repeat;transition:transform .9s cubic-bezier(.22,.61,.36,1);pointer-events:none}
-.gvid:hover::before{transform:scale(1.035)}
+.gvid::before{content:none}
+.gvid-img{position:absolute;inset:0;width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;display:block;z-index:0;transition:transform .9s cubic-bezier(.22,.61,.36,1)}
+.gvid:hover .gvid-img{transform:scale(1.035)}
 .gvid:hover{transform:translateY(-2px);box-shadow:0 14px 32px -24px rgba(13,37,37,.45);z-index:2}
 .gvid:hover::after{opacity:.55}
 .gvid.playing{cursor:default}
@@ -299,7 +304,8 @@ section.cd-band,section.vn-band,section.inc-band{overflow:visible}
 .gvid-ph{position:absolute;left:0;right:0;bottom:16px;text-align:center;z-index:2;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,239,226,.6);pointer-events:none}
 .gvid.has-video .gvid-ph{display:none}
 .gvid.playing .gvid-play{display:none}
-@media(max-width:900px){.gvid{flex-basis:calc((100% - 8px)/2)}}
+.gvid.img-tile{cursor:default}
+@media(max-width:900px){.gvid{flex-basis:calc((100% - 24px)/2)}}
 @media(max-width:600px){.gvid{flex-basis:100%}}
 .gg-note{text-align:center;margin-top:20px;font-size:11px;letter-spacing:.04em;color:var(--ink-quiet);line-height:1.7}
 .gi{position:relative;overflow:hidden;background:#2a0f12 center/cover}
@@ -324,7 +330,30 @@ section.cd-band,section.vn-band,section.inc-band{overflow:visible}
 .sponsors{text-align:center;padding:clamp(70px,9vw,110px) 0;border-top:1px solid var(--line)}
 .sp-row{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:clamp(28px,5vw,64px);margin-top:38px}
 .sp{font-family:var(--butler);font-size:15px;letter-spacing:.28em;color:var(--ink-quiet);text-transform:uppercase}
-.sp-logo{height:auto !important;width:auto !important;max-height:72px;max-width:220px;object-fit:contain;display:inline-block}
+.sp-logo{height:auto !important;width:auto !important;max-height:41px;max-width:126px;object-fit:contain;display:inline-block}
+/* PROFILE SLIDER (Partners & Sponsors) */
+/* Profile slider temporarily hidden — remove this rule to restore. */
+.pslider{display:none !important}
+.pslider{position:relative;margin-top:clamp(54px,7vw,84px);padding:0 clamp(40px,5vw,60px)}
+.pviewport{overflow:hidden;padding:28px 0;margin:-28px 0}
+.ptrack{display:flex;justify-content:center;gap:clamp(20px,2.4vw,36px);transition:transform .6s cubic-bezier(.22,.61,.36,1)}
+.pcard{flex:0 0 calc((100% - 3*clamp(20px,2.4vw,36px))/4);max-width:220px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.pphoto{position:relative;width:100%;aspect-ratio:3/4.4;border-radius:999px;overflow:hidden;background:var(--paper-warm) center/cover no-repeat;border:1px solid var(--line);transition:transform .54s cubic-bezier(.22,.61,.36,1),box-shadow .54s cubic-bezier(.22,.61,.36,1)}
+.pphoto[data-photo=""]{background-image:radial-gradient(120% 90% at 50% 0%,#f3eed9,#e7e0c8)}
+.pphoto::after{content:'';position:absolute;inset:0;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(13,37,37,.06),inset 0 -40px 60px -40px rgba(7,24,26,.45)}
+.pcard:hover .pphoto{transform:scale(1.035);box-shadow:0 22px 40px -24px rgba(7,24,26,.4)}
+.pph-mark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:46%;opacity:.5;pointer-events:none}
+.pname{font-family:var(--butler);font-size:clamp(18px,1.5vw,21px);color:var(--forest);margin-top:22px;line-height:1.2;letter-spacing:-.01em}
+.prole{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin-top:9px;line-height:1.5}
+.parrow{position:absolute;top:38%;transform:translateY(-50%);z-index:3;width:44px;height:44px;border:none;background:transparent;color:var(--gold-deep);font-size:21px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:Georgia,'Times New Roman',serif;transition:color .3s}
+.parrow:hover{color:var(--forest)}
+.parrow.prev{left:0}
+.parrow.next{right:0}
+.pdots{display:flex;justify-content:center;gap:9px;margin-top:34px}
+.pdot{width:8px;height:8px;border-radius:50%;background:var(--line-strong);border:none;cursor:pointer;padding:0;transition:all .3s}
+.pdot.active{background:var(--gold-deep);transform:scale(1.3)}
+@media(max-width:900px){.pcard{flex-basis:calc((100% - clamp(20px,2.4vw,36px))/2);max-width:200px}}
+@media(max-width:560px){.pcard{flex-basis:auto;width:160px;max-width:160px}}
 footer{background:var(--forest-deep);padding:54px 0 40px}
 .foot-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;padding-bottom:30px;border-bottom:1px solid rgba(244,239,226,.12)}
 .foot-logo{display:flex;align-items:center;gap:13px}
@@ -566,18 +595,18 @@ h1.hero-title{font-family:var(--butler) !important;font-size:clamp(62px,11vw,138
   <div class="hero-grad"></div>
   <img class="hero-squiggle" src="https://celex-ensemble.com/wp-content/uploads/2026/06/squiggle.png" alt="">
   <div class="hero-content">
-    <p class="hero-eyebrow"><span style="color:#0d2525"> CELEX FAMILIARISATION TRIP SERIES · 2026</span></p>
-    <h1 class="hero-title"><span style="color:#faf8eb">Six Senses</span><br><em>of Luxury</em></h1>
-    <p class="hero-sub" style="color: rgb(250, 248, 235)">A six-day retreat and immersion for the world's leading wedding planners</p>
+    <p class="hero-eyebrow"><span style="color:#0d2525"> CELEX SOJOURN · 2026</span></p>
+    <h1 class="hero-title"><span style="color:#faf8eb">Turban of the</span><br><em>Highest Pour</em></h1>
+    <p class="hero-sub" style="color: rgb(250, 248, 235)">A five-day retreat and immersion for the world's leading wedding planners</p>
     <div class="hero-rule"></div>
     <a href="https://celex-ensemble.com/celex-sojourn-enquiries/" class="btn-g hero-btn">Register your interest</a>
   </div>
   <div class="hero-strip">
-    <div class="hs-item"><div class="hs-l">Dates</div><div class="hs-v">November 2026</div></div>
+    <div class="hs-item"><div class="hs-l">Dates</div><div class="hs-v">1–6 December 2026</div></div>
     <div class="hs-sep"></div>
     <div class="hs-item"><div class="hs-l">Location</div><div class="hs-v">Marrakech · Taghazout Bay</div></div>
     <div class="hs-sep"></div>
-    <div class="hs-item"><div class="hs-l">ATTENDEES</div><div class="hs-v">12 Planners</div></div>
+    <div class="hs-item"><div class="hs-l">ATTENDEES</div><div class="hs-v">10 Planners</div></div>
   </div>
 </section>
 
@@ -601,7 +630,7 @@ h1.hero-title{font-family:var(--butler) !important;font-size:clamp(62px,11vw,138
         <div class="cd-shell cd-back">
           <div class="cd-done-inner">
             <span class="eyebrow" style="color:var(--gold);margin-bottom:18px">We are in Morocco!</span>
-            <p class="cd-done-msg">The journey to Six Senses of Luxury has begun.</p>
+            <p class="cd-done-msg">The journey to Turban of the Highest Pour has begun.</p>
           </div>
         </div>
       </div>
@@ -614,13 +643,12 @@ h1.hero-title{font-family:var(--butler) !important;font-size:clamp(62px,11vw,138
   <div class="wrap">
     <div class="ov">
       <div class="ov-figure">
-        <div class="ov-img"><div class="ov-badge"><div class="ov-badge-n">Nov</div><div class="ov-badge-t">2026</div></div></div>
+        <div class="ov-img"><div class="ov-badge"><div class="ov-badge-n">Dec</div><div class="ov-badge-t">2026</div></div></div>
       </div>
       <div class="ov-text">
-        <span class="eyebrow" style="margin-bottom:16px">About the Exploration</span>
-        <h2>Where <em style="color: rgb(201, 167, 108)">stillness becomes</em> the itinerary</h2>
-        <p>Morocco does not need to be hurried. Six Senses of Luxury is the CELEX Sojourn for November 2026 — a six-day journey across Marrakech and Agadir's Taghazout Bay designed around a simple idea: that the best way to understand a destination is to actually rest inside it.</p>
-        <p>Limited to twelve attendees. The journey opens in Marrakech — medinas, riads, and a city that has hosted celebrations for centuries — before moving south to the Atlantic coast and the quiet of Fairmont Taghazout Bay. Two destinations. Two entirely different arguments for why Morocco belongs on every shortlist.</p>
+        <h2>Where <em style="color: rgb(201, 167, 108)">stillness<br>becomes</em> the itinerary</h2>
+        <p>Morocco does not need to be hurried. Turban of the Highest Pour is the CELEX Sojourn for December 2026, a six-day journey across Marrakech and Agadir's Taghazout Bay designed around a simple idea: that the best way to understand a destination is to actually rest inside it.</p>
+        <p>Limited to ten attendees. The journey opens in Marrakech, a city of medinas and riads that has hosted celebrations for centuries, before moving south to the Atlantic coast and the quiet of Fairmont Taghazout Bay. Two destinations. Two entirely different arguments for why Morocco belongs on every shortlist.</p>
         <p>Planners leave rested, informed, and with firsthand knowledge of a destination that is asking to be taken seriously.</p>
       </div>
       <div class="tags">
@@ -636,22 +664,24 @@ h1.hero-title{font-family:var(--butler) !important;font-size:clamp(62px,11vw,138
   <div class="wrap">
     <div class="venue-hd">
       <div>
-        <span class="eyebrow" style="margin-bottom:16px">The Base</span>
         <h2>Fairmont Taghazout<br><em style="color: rgb(201, 167, 108)">Bay</em></h2>
       </div>
-      <p>Set along the Atlantic coastline south of Agadir, Fairmont Taghazout Bay is the anchor for the second half of the Sojourn. A resort built for a slower pace — where the Atlantic sets the tone and the landscape does most of the work. The kind of property planners remember, and clients ask about.</p>
+      <p>Set along the Atlantic coastline south of Agadir, Fairmont Taghazout Bay is the anchor for the second half of the Sojourn. A resort built for a slower pace, where the Atlantic sets the tone and the landscape does most of the work. The kind of property planners remember, and clients ask about.</p>
     </div>
     <div class="vslider">
       <button class="varrow prev" id="vprev" aria-label="Previous">←</button>
       <div class="vviewport">
         <div class="venue-grid" id="vtrack">
-          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-09-at-16.50.42.jpeg')"></div>
-          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-10.jpg')"></div>
-          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-Hanoi-7.jpg')"></div>
-          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-Hanoi-11.jpg')"></div>
-          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-4.jpg')"></div>
-          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-09-at-16.50.42-1.jpeg')"></div>
-          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-09-at-16.50.41.jpeg')"></div>
+          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-Tagazhout-15-scaled.jpg')"></div>
+          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-Tagazhout-10-scaled.jpg')"></div>
+          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-Tagazhout-7-10-scaled.jpg')"></div>
+          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-Tagazhout-13-scaled.jpg')"></div>
+          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-Tagazhout-8-scaled.jpg')"></div>
+          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-Tagazhout-9-scaled.jpg')"></div>
+          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-Tagazhout-16.jpg')"></div>
+          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-Tagazhout-3-scaled.jpg')"></div>
+          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-Tagazhout-5-scaled.jpg')"></div>
+          <div class="vc" style="background-image:url('https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-Tagazhout-6-scaled.jpg')"></div>
         </div>
       </div>
       <button class="varrow next" id="vnext" aria-label="Next">→</button>
@@ -663,7 +693,7 @@ h1.hero-title{font-family:var(--butler) !important;font-size:clamp(62px,11vw,138
 <!-- ░░ INCLUSIONS ░░ -->
 <section class="band reveal inc-band">
   <div class="wrap">
-    <div class="inc-head2"><span class="eyebrow">What's Covered</span><h2 class="inc-h">Inclusions<br><em>&</em> exclusions</h2></div>
+    <div class="inc-head2"><h2 class="inc-h">Inclusions<br><em>&</em> exclusions</h2></div>
     <div class="inc-grid">
       <div class="inc-col-yes">
         <div class="inc-chead">
@@ -699,9 +729,9 @@ h1.hero-title{font-family:var(--butler) !important;font-size:clamp(62px,11vw,138
 <section class="band" id="schedule">
   <div class="sch-bg" id="schBg"></div>
   <div class="wrap">
-    <div class="sec-hd"><span class="eyebrow">Programme</span><h2>Schedule <em>at a glance</em></h2><div class="sec-rule"></div></div>
-    <div class="sch-rows" style="max-width:680px">
-      <p style="font-size:16px;line-height:1.95;color:rgba(244,239,226,.72);margin-bottom:20px">The Six Senses of Luxury programme is being carefully put together. An itinerary built for planners who want to absorb a destination rather than simply pass through it. Details will be shared with confirmed attendees first.</p>
+    <div class="sec-hd" style="text-align:center"><h2>Rejuvenation <em style="font-style:italic">unlocking soon</em></h2><div class="sec-rule" style="margin-left:auto;margin-right:auto"></div></div>
+    <div class="sch-rows" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center">
+      <p style="font-size:16px;line-height:1.95;color:rgba(244,239,226,.72);margin-bottom:20px">The Turban of the Highest Pour programme is being carefully put together. An itinerary built for planners who want to absorb a destination rather than simply pass through it. Details will be shared when the time is right.</p>
       <p style="font-family:var(--butler);font-style:italic;font-size:clamp(17px,2vw,22px);color:var(--gold)">Watch this space.</p>
     </div>
   </div>
@@ -712,9 +742,8 @@ h1.hero-title{font-family:var(--butler) !important;font-size:clamp(62px,11vw,138
   <img class="book-sq" src="https://celex-ensemble.com/wp-content/uploads/2026/06/squiggle.png" alt="">
   <div class="wrap" style="padding: 0px 57px">
   <div class="book-inner" style="padding: 69px 57px; margin: 0px 5px 0px 145px">
-    <span class="eyebrow" style="display:block;margin-bottom:24px;color:var(--gold)">Reserve Your Place</span>
     <h2>Secure your<br><em>invitation</em></h2>
-    <p>Places are strictly limited to 12 wedding professionals. To express interest or learn more, reach out to the CELEX team directly.</p>
+    <p>Places are strictly limited to 10 wedding professionals. To express interest or learn more, reach out to the CELEX team directly.</p>
     <div class="btns">
       <a href="https://celex-ensemble.com/celex-sojourn-enquiries/" class="btn-g">Register your interest</a>
       <a href="https://celex-ensemble.com/contact-us/" class="btn-o">Speak with us</a>
@@ -727,18 +756,18 @@ h1.hero-title{font-family:var(--butler) !important;font-size:clamp(62px,11vw,138
 <section class="band band-warm reveal" id="gallery">
   <img class="dragon-spine-img" src="https://celex-ensemble.com/wp-content/uploads/2026/06/Dragon-Spine.png" alt="" loading="lazy">
   <div class="wrap">
-    <div class="gallery-hd"><span class="eyebrow" style="margin-bottom:16px">A Taste of Vietnam</span><h2>The <em style="color: rgb(201, 167, 108)">Discovery</em></h2></div>
+    <div class="gallery-hd"><span class="eyebrow" style="margin-bottom:16px">A Taste of Morocco</span><h2>The <em style="color: rgb(201, 167, 108)">Setting</em></h2></div>
     <div class="gslider">
       <button class="garrow prev" id="gprev" aria-label="Previous">←</button>
       <div class="gviewport">
         <div class="gtrack" id="gtrack">
-          <!-- VIDEO TILES — data-yt="YouTube link or ID" plays on click; data-cover="image URL" sets a custom poster (else the YouTube thumbnail is used) -->
-          <div class="gvid" data-cover="https://celex-ensemble.com/wp-content/uploads/2026/06/Web-Fairmont.png" data-yt="https://youtu.be/_4MAE37z7Wg?si=yZS12_eygxT-IELF"><button class="gvid-play" type="button" aria-label="Play video"></button><span class="gvid-ph">Add a YouTube link</span></div>
-          <div class="gvid" data-cover="https://celex-ensemble.com/wp-content/uploads/2026/06/Web-Ninh-Binh.png" data-yt="https://youtu.be/ysAK8dBMyS4?si=LqE9AT_hI3VjKGYy"><button class="gvid-play" type="button" aria-label="Play video"></button><span class="gvid-ph">Add a YouTube link</span></div>
-          <div class="gvid" data-cover="https://celex-ensemble.com/wp-content/uploads/2026/06/Web-Lecia-Bridal.png" data-yt="https://youtu.be/c-i-1MXBHiU?si=80eSJl0JaCYGBm7s"><button class="gvid-play" type="button" aria-label="Play video"></button><span class="gvid-ph">Add a YouTube link</span></div>
-          <div class="gvid" data-cover="https://celex-ensemble.com/wp-content/uploads/2026/06/Web-Dragon-Pearl-Cave.png" data-yt="https://youtu.be/u7cbSFp1wdQ?si=HvCIdDMBG1DRRmrb"><button class="gvid-play" type="button" aria-label="Play video"></button><span class="gvid-ph">Add a YouTube link</span></div>
-          <div class="gvid" data-cover="https://celex-ensemble.com/wp-content/uploads/2026/06/Web-Heritage-Hamlong.png" data-yt="https://youtu.be/Wapkg2O6N8c?si=Zw0_SwPVsRHdksoJ"><button class="gvid-play" type="button" aria-label="Play video"></button><span class="gvid-ph">Add a YouTube link</span></div>
-          <div class="gvid" data-cover="https://celex-ensemble.com/wp-content/uploads/2026/06/Web-Hello-Vietnam.png" data-yt="https://youtu.be/V9Vjh04aOC4?si=jMwtX3gNPa3DG6Us"><button class="gvid-play" type="button" aria-label="Play video"></button><span class="gvid-ph">Add a YouTube link</span></div>
+          <!-- IMAGE TILES — data-cover sets each tile's photo -->
+          <div class="gvid img-tile" data-cover="https://celex-ensemble.com/wp-content/uploads/2026/06/Morroco-Setting-2-scaled.jpg"></div>
+          <div class="gvid img-tile" data-cover="https://celex-ensemble.com/wp-content/uploads/2026/06/Morocco-Setting-7-scaled.jpg"></div>
+          <div class="gvid img-tile" data-cover="https://celex-ensemble.com/wp-content/uploads/2026/06/Morocco-Setting-5-scaled.jpg"></div>
+          <div class="gvid img-tile" data-cover="https://celex-ensemble.com/wp-content/uploads/2026/06/Morroco-Setting-3-scaled.jpg"></div>
+          <div class="gvid img-tile" data-cover="https://celex-ensemble.com/wp-content/uploads/2026/06/Morocco-Setting-6-scaled.jpg"></div>
+          <div class="gvid img-tile" data-cover="https://celex-ensemble.com/wp-content/uploads/2026/06/Morocco-Setting-4-scaled.jpg"></div>
         </div>
       </div>
       <button class="garrow next" id="gnext" aria-label="Next">→</button>
@@ -750,8 +779,24 @@ h1.hero-title{font-family:var(--butler) !important;font-size:clamp(62px,11vw,138
 <!-- ░░ SPONSORS ░░ -->
 <section class="sponsors reveal">
   <div class="wrap">
-    <span class="eyebrow">Partners & Supporters</span>
-    <div class="sp-row"><img class="sp-logo" src="https://celex-ensemble.com/wp-content/uploads/2026/06/fairmont_hanoi_logo.png" alt="Fairmont Hanoi"></div>
+    <span class="eyebrow">Partners & Sponsors</span>
+    <div class="sp-row"><img class="sp-logo" src="https://celex-ensemble.com/wp-content/uploads/2026/06/Fairmont-Tagazhout-Bay-Logo-scaled.png" alt="Fairmont Taghazout Bay"></div>
+
+    <div class="pslider">
+      <button class="parrow prev" id="pprev" aria-label="Previous">←</button>
+      <div class="pviewport">
+        <div class="ptrack" id="ptrack">
+          <!-- PROFILE TILES — replace data-photo with each person's image; edit name & role -->
+          <div class="pcard">
+            <div class="pphoto" data-photo="" style="background-position: center"></div>
+            <div class="pname">Full Name</div>
+            <div class="prole">Designation</div>
+          </div>
+        </div>
+      </div>
+      <button class="parrow next" id="pnext" aria-label="Next">→</button>
+      <div class="pdots" id="pdots"></div>
+    </div>
   </div>
 </section>
 
@@ -770,13 +815,13 @@ document.querySelectorAll('.sch-tab').forEach(t=>t.addEventListener('click',()=>
   setSchBg(d,dir);
 }));
 // schedule full-bleed background per day, with a consistent directional slide
-const D1="url('https://celex-ensemble.com/wp-content/uploads/2026/06/1.png')";
-const D2="url('https://celex-ensemble.com/wp-content/uploads/2026/06/Schedule-Day-2-Cover-scaled.jpg')";
-const D3="url('https://celex-ensemble.com/wp-content/uploads/2026/06/Schedule-Day-3-Cover-scaled.jpg')";
+const D1="url('https://celex-ensemble.com/wp-content/uploads/2026/06/Morocco-Schedule-2.jpg')";
+const D2="url('https://celex-ensemble.com/wp-content/uploads/2026/06/Morocco-Schedule-2.jpg')";
+const D3="url('https://celex-ensemble.com/wp-content/uploads/2026/06/Morocooc-Schedule-3-scaled.jpg')";
 const D4="url('https://celex-ensemble.com/wp-content/uploads/2026/06/Yen-Tu-Mountain.png')";
 const D5="url('https://celex-ensemble.com/wp-content/uploads/2026/06/Schedule-Day-5-Cover-scaled.jpg')";
 const D6="url('https://celex-ensemble.com/wp-content/uploads/2026/06/2.png')";
-const SCH_IMG={'1':[D1,'center'],'2':[D2,'center'],'3':[D3,'center'],'4':[D4,'center'],'5':[D5,'center'],'6':[D6,'center']};
+const SCH_IMG={'1':[D1,'center top'],'2':[D2,'center'],'3':[D3,'center'],'4':[D4,'center'],'5':[D5,'center'],'6':[D6,'center']};
 const schBg=document.getElementById('schBg');
 let curDay='1';
 function setSchBg(d,dir){
@@ -795,7 +840,7 @@ function setSchBg(d,dir){
 }
 setSchBg('1',0);
 // countdown to event start, with per-tick pulse
-const CD_TARGET=new Date('2026-11-20T00:00:00').getTime();
+const CD_TARGET=new Date('2026-12-01T00:00:00').getTime();
 const cdEls={d:document.getElementById('cd-d'),h:document.getElementById('cd-h'),m:document.getElementById('cd-m'),s:document.getElementById('cd-s')};
 function cdSet(k,v){const el=cdEls[k];if(!el)return;const str=k==='d'?String(v):String(v).padStart(2,'0');if(k==='s'){if(el.textContent===str)return;el.textContent=str;el.classList.remove('cd-tick');void el.offsetWidth;el.classList.add('cd-tick');}else{updateRoller(el,str);}}
 function buildRoller(el,str){el.textContent='';for(const ch of str){const slot=document.createElement('span');slot.className='rdig';const cur=document.createElement('span');cur.className='rcur';cur.textContent=ch;slot.appendChild(cur);el.appendChild(slot);}}
@@ -858,8 +903,10 @@ if(gtrack){
   let perView=3,page=0,pages=1;
   function calcPerView(){return innerWidth<=600?1:(innerWidth<=900?2:3);}
   function render(){
-    const vw=gtrack.parentElement.clientWidth;
-    gtrack.style.transform='translateX('+(-page*(vw+GAP))+'px)';
+    const base=slots[page*perView]||slots[slots.length-1];
+    // Align to the real left offset of the page's first tile — avoids sub-pixel
+    // drift from width math that let a sliver of the next image peek through.
+    gtrack.style.transform='translateX('+(-(base?base.offsetLeft:0))+'px)';
   }
   function build(){
     perView=calcPerView();
@@ -874,14 +921,19 @@ if(gtrack){
   if(gn)gn.addEventListener('click',()=>{page=(page+1)%pages;render();});
   let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(build,150);},{passive:true});
 }
-// video tiles — paste a YouTube link into each .gvid[data-yt]; click loads the player
+// image tiles — each .gvid gets a background-image layer from its data-cover
 (function(){
   function ytId(v){if(!v)return '';v=v.trim();if(/^[\w-]{11}$/.test(v))return v;var m=v.match(/(?:youtu\.be\/|[?&]v=|\/embed\/|\/shorts\/|\/live\/)([\w-]{11})/);return m?m[1]:'';}
   document.querySelectorAll('.gvid').forEach(function(tile){
     var id=ytId(tile.getAttribute('data-yt'));
     var cover=(tile.getAttribute('data-cover')||'').trim();
-    if(cover){tile.style.backgroundImage="url('"+cover+"')";}
-    else if(id){tile.style.backgroundImage="url('https://img.youtube.com/vi/"+id+"/hqdefault.jpg')";}
+    var imgSrc=cover||(id?'https://img.youtube.com/vi/'+id+'/hqdefault.jpg':'');
+    if(imgSrc){
+      var im=document.createElement('div');
+      im.className='gvid-img';im.setAttribute('role','img');im.setAttribute('aria-label','');
+      im.style.backgroundImage="url('"+imgSrc+"')";
+      tile.insertBefore(im,tile.firstChild);
+    }
     if(id||cover){tile.classList.add('has-video');}
     tile.addEventListener('click',function(){
       if(tile.classList.contains('playing'))return;
@@ -898,38 +950,67 @@ if(gtrack){
     });
   });
 })();
-// venue slider — 2 per view (laptop/desktop), 1 per view (tablet/mobile ≤1024px)
+// venue slider — seamless infinite loop (1 per view)
 const vtrack=document.getElementById('vtrack');
 if(vtrack){
   const vtotal=vtrack.children.length;
   const vdots=document.getElementById('vdots');
-  const VGAP=0;
-  let vPer=1,vPage=0,vPages=1;
-  function vCalc(){return 1;}
-  function vRender(){
-    const vw=vtrack.parentElement.clientWidth;
-    vtrack.style.transform='translateX('+(-vPage*(vw+VGAP))+'px)';
-    [...vdots.children].forEach((d,i)=>d.classList.toggle('active',i===vPage));
+  const VTRANS='transform .6s cubic-bezier(.22,.61,.36,1)';
+  // Clone the first & last real slides to the opposite edges so the wrap-around
+  // (last→first / first→last) animates as a single, direct slide step.
+  const vFirst=vtrack.children[0].cloneNode(true);
+  const vLast=vtrack.children[vtotal-1].cloneNode(true);
+  vFirst.setAttribute('aria-hidden','true');
+  vLast.setAttribute('aria-hidden','true');
+  vtrack.appendChild(vFirst);
+  vtrack.insertBefore(vLast,vtrack.children[0]);
+  let vIndex=1;
+  let vAnimating=false,vSafety=null;
+  function vWidth(){return vtrack.parentElement.clientWidth;}
+  function vSettle(){
+    vAnimating=false;
+    if(vIndex===vtotal+1){vIndex=1;vSet(false);}
+    else if(vIndex===0){vIndex=vtotal;vSet(false);}
   }
+  function vSet(animate){
+    vtrack.style.transition=animate?VTRANS:'none';
+    // align to the real left offset of the target child — exact, no sub-pixel peek
+    const child=vtrack.children[vIndex];
+    vtrack.style.transform='translateX('+(-(child?child.offsetLeft:vIndex*vWidth()))+'px)';
+    const real=((vIndex-1)%vtotal+vtotal)%vtotal;
+    [...vdots.children].forEach((d,i)=>d.classList.toggle('active',i===real));
+  }
+  vtrack.addEventListener('transitionend',(e)=>{
+    if(e.propertyName!=='transform')return;
+    clearTimeout(vSafety);
+    vSettle();
+  });
+  function vStep(target){
+    if(vAnimating)return;
+    vAnimating=true;
+    vIndex=target;
+    vSet(true);
+    clearTimeout(vSafety);
+    vSafety=setTimeout(vSettle,700);
+  }
+  function vGo(dir){vStep(vIndex+dir);}
   function vBuild(){
-    vPer=vCalc();
-    vPages=Math.ceil(vtotal/vPer);
-    if(vPage>vPages-1)vPage=vPages-1;
     vdots.innerHTML='';
-    for(let i=0;i<vPages;i++){
+    const real=((vIndex-1)%vtotal+vtotal)%vtotal;
+    for(let i=0;i<vtotal;i++){
       const b=document.createElement('button');
-      b.className='vdot'+(i===vPage?' active':'');
+      b.className='vdot'+(i===real?' active':'');
       b.setAttribute('aria-label','Slide '+(i+1));
-      b.addEventListener('click',()=>{vPage=i;vRender();});
+      b.addEventListener('click',()=>vStep(i+1));
       vdots.appendChild(b);
     }
-    vRender();
+    vSet(false);
   }
   vBuild();
   const vp=document.getElementById('vprev'),vn=document.getElementById('vnext');
-  if(vp)vp.addEventListener('click',()=>{vPage=(vPage-1+vPages)%vPages;vRender();});
-  if(vn)vn.addEventListener('click',()=>{vPage=(vPage+1)%vPages;vRender();});
-  let vrt;addEventListener('resize',()=>{clearTimeout(vrt);vrt=setTimeout(vBuild,150);},{passive:true});
+  if(vp)vp.addEventListener('click',()=>vGo(-1));
+  if(vn)vn.addEventListener('click',()=>vGo(1));
+  let vrt;addEventListener('resize',()=>{clearTimeout(vrt);vrt=setTimeout(()=>vSet(false),150);},{passive:true});
 }
 // (dragon spine now positioned purely via CSS at the invitation→setting seam)
 // Scroll-driven appear/disappear for the dragon overlays — opacity peaks as each
@@ -960,6 +1041,51 @@ if(vtrack){
   addEventListener('load',update);
   update();
 })();
+// profile slider (Partners & Sponsors) — responsive 4 / 2 / 1 per view
+const ptrack=document.getElementById('ptrack');
+if(ptrack){
+  // set each tile's photo + hide the placeholder mark once a real image is provided
+  ptrack.querySelectorAll('.pphoto').forEach(function(ph){
+    var src=(ph.getAttribute('data-photo')||'').trim();
+    if(src){ph.style.backgroundImage="url('"+src+"')";var m=ph.querySelector('.pph-mark');if(m)m.style.display='none';}
+  });
+  const ptotal=ptrack.children.length;
+  const pdots=document.getElementById('pdots');
+  function pGap(){return parseFloat(getComputedStyle(ptrack).gap)||24;}
+  function pPerView(){return innerWidth<=560?1:(innerWidth<=900?2:4);}
+  let pPer=4,pPage=0,pPages=1;
+  function pRender(){
+    const vw=ptrack.parentElement.clientWidth;
+    ptrack.style.transform='translateX('+(-pPage*(vw+pGap()))+'px)';
+    if(pdots)[...pdots.children].forEach((d,i)=>d.classList.toggle('active',i===pPage));
+  }
+  function pBuild(){
+    pPer=pPerView();
+    pPages=Math.ceil(ptotal/pPer);
+    if(pPage>pPages-1)pPage=pPages-1;
+    if(pPage<0)pPage=0;
+    if(pdots){
+      pdots.innerHTML='';
+      for(let i=0;i<pPages;i++){
+        const b=document.createElement('button');
+        b.className='pdot'+(i===pPage?' active':'');
+        b.setAttribute('aria-label','Page '+(i+1));
+        b.addEventListener('click',()=>{pPage=i;pRender();});
+        pdots.appendChild(b);
+      }
+      pdots.style.display=pPages>1?'flex':'none';
+    }
+    // hide arrows when everything fits on one page
+    if(pp)pp.style.display=pPages>1?'':'none';
+    if(pn)pn.style.display=pPages>1?'':'none';
+    pRender();
+  }
+  const pp=document.getElementById('pprev'),pn=document.getElementById('pnext');
+  pBuild();
+  if(pp)pp.addEventListener('click',()=>{pPage=(pPage-1+pPages)%pPages;pRender();});
+  if(pn)pn.addEventListener('click',()=>{pPage=(pPage+1)%pPages;pRender();});
+  let prt;addEventListener('resize',()=>{clearTimeout(prt);prt=setTimeout(pBuild,150);},{passive:true});
+}
 </script>
 </body>
 </html>
